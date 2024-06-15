@@ -37,3 +37,9 @@ class MotorInstructions:
 ```
 
 I derived the constants/addresses from HiWonder's arduino tutorial.  The scripts use [smbus2](https://pypi.org/project/smbus2/) to handle the writing operations.  That would be the only 3rd party library needed.
+
+The main script tank_control.py is a simple script that allows you to control the tank chassis with the arrow keys.
+
+It opens up a curses window and listens for arrow key presses.  When an arrow key is pressed, it sends the appropriate motor instructions to the motor controller.
+
+I'll be adding more scripts as I develop them and contributions are welcome!
